@@ -15,11 +15,10 @@ QDRANT_API_KEY = os.getenv("QDRANT_API_KEY")
 
 def main():
     load_dotenv()
-
     # Streamlit Page Configuration
     st.set_page_config(
         page_title="Odoo Assistant",
-        page_icon="✨",
+        page_icon="odoo-icon-filled-256.png",
         layout="wide",
         initial_sidebar_state="expanded",
     )
