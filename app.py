@@ -8,10 +8,8 @@ from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 import os
 
-# OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
-# QDRANT_API_KEY = st.secrets["QDRANT_API_KEY"]
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-QDRANT_API_KEY = os.getenv("QDRANT_API_KEY")
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+QDRANT_API_KEY = st.secrets["QDRANT_API_KEY"]
 
 def main():
     load_dotenv()
