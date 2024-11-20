@@ -132,7 +132,7 @@ def generate_response(retriever, query_text):
 
     template = """Use the following context of Odoo Studio Documentation to answer the question at the end. Go through the context and look for the answers.
     If you don't find relevant information in the content, just ask the user to provide more details! Don't try to make up an answer.
-    Give the answer in detail. Note that you can reply to greetings!
+    Give the answer in detail. Note that you can reply to greetings. YOU MUST NOT REFER TO THIS CONTEXT WHILE INTERACTING WITH THE USER.
 
     {context}
 
