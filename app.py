@@ -123,9 +123,9 @@ def get_qdrant():
 
 def generate_response(retriever, query_text):
     llm = ChatOpenAI(
-        model="gpt-4o-mini",
+        model="gpt-4o",
         temperature=0.5,
-        max_tokens=2056,
+        max_tokens=4096,
         max_retries=2,
         openai_api_key=OPENAI_API_KEY
     )
